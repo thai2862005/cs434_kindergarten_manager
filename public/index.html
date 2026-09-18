@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quản lý tài khoản</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Quản lý tài khoản</h1>
+  <label class="switch-user">
+    Đăng nhập với vai trò
+    <select id="whoami"></select>
+  </label>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <span id="hint" class="hint"></span>
+    <button id="btnAdd" class="btn btn-green">+ Thêm tài khoản</button>
+  </div>
+
+  <table class="account-table">
+    <thead>
+      <tr><th>Họ tên</th><th>Email</th><th>Quyền</th><th></th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

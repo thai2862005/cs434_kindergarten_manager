@@ -1,0 +1,11 @@
+{
+  "name": "account-management",
+  "version": "1.0.0",
+  "description": "Quản lý tài khoản: user tự sửa tài khoản, admin toàn quyền tạo/xóa/phân quyền",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

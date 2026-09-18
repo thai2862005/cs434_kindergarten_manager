@@ -1,0 +1,46 @@
+:root {
+  --ink: #22232A;
+  --muted: #767888;
+  --line: #E7E7EF;
+  --bg: #FAFAFC;
+
+  --purple: #7C5CFC; --purple-bg: #F1ECFF;
+  --blue: #2E8AE6;   --blue-bg: #E9F3FD;
+  --green: #17A673;  --green-bg: #E6F8F1;
+  --amber: #E0982A;  --amber-bg: #FBF1DF;
+  --red: #E14F4F;    --red-bg: #FDEAEA;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, "Segoe UI", sans-serif; }
+
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 28px; background: #fff; border-bottom: 1px solid var(--line);
+}
+.topbar h1 { font-size: 19px; margin: 0; }
+.switch-user { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.switch-user select { padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); font-size: 13px; }
+
+.wrap { max-width: 760px; margin: 28px auto; padding: 0 20px; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.hint { font-size: 13px; color: var(--muted); }
+
+.account-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.account-table th, .account-table td { padding: 12px 16px; text-align: left; font-size: 14px; border-bottom: 1px solid var(--line); }
+.account-table th { color: var(--muted); font-weight: 500; font-size: 12px; }
+.account-table tr:last-child td { border-bottom: none; }
+
+.badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+.badge-admin { background: var(--purple-bg); color: var(--purple); }
+.badge-user  { background: var(--blue-bg); color: var(--blue); }
+
+.btn { border: none; border-radius: 6px; padding: 7px 12px; font-size: 13px; cursor: pointer; margin-left: 6px; }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.btn-green  { background: var(--green-bg); color: var(--green); }
+.btn-blue   { background: var(--blue-bg); color: var(--blue); }
+.btn-amber  { background: var(--amber-bg); color: var(--amber); }
+.btn-red    { background: var(--red-bg); color: var(--red); }
+
+.row-actions { text-align: right; white-space: nowrap; }
